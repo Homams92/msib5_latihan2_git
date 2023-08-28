@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pehitungan Nilai Rata-rata</title>
+</head>
+<body>
+<div class="container">
+    <h1 class="judul">Hitung Nilai Rata-rata <br>______________________</h1>
+    <form id="nilai-form">
+        <label for="nama">Nama Mahasiswa:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="mata-kuliah">Mata Kuliah:</label><br>
+        <input type="text" id="mata-kuliah" name="mata-kuliah" required><br><br>
+
+        <label for="grade">Grade:</label><br>
+        <select id="grade" name="grade" required>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="E">E</option>
+    </select><br><br>
+    
+    <button type="button" id="hitung-button">Hitung</button>
+    </form>
+    
+    <div id="hasil-table" class="hidden">
+        <h2>Hasil Perhitungan</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama Mahasiswa</th>
+                    <th>Mata Kuliah</th>
+                    <th>Grade</th>
+                    <th>Nilai Rata-rata</th>
+                </tr>
+            </thead>
+                <tbody id="hasil-body">
+                   Ini adalah  hasilnya
+                </tbody>
+        </table>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
